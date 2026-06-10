@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time Table</title>
+
+<style>
+    table {
+        border-collapse: collapse;
+        margin: 20px auto;
+        width: 80%;
+        border-top: 2px solid black;   /* single top line */
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: center;
+        border: none; /* remove boxes */
+    }
+
+    /* horizontal lines only */
+    tr {
+        border-bottom: 1px solid black;
+    }
+
+    /* vertical lines */
+    td, th {
+        border-right: 1px solid black;
+    }
+
+    /* remove last column line */
+    tr td:last-child,
+    tr th:last-child {
+        border-right: none;
+    }
+
+    caption {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .lunch {
+        background-color: pink;
+        font-weight: bold;
+    }
+</style>
+
+</head>
+<body>
+
+<table>
+    <caption>Time-Table</caption>
+
+    <!-- Day Row -->
+    <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+    </tr>
+
+    <tr>
+        <td>8:00</td>
+        <td>English</td>
+        <td>Marathi</td>
+        <td>English</td>
+        <td>Marathi</td>
+        <td>English</td>
+        <td>Marathi</td>
+    </tr>
+
+    <tr>
+        <td>9:00</td>
+        <td>English</td>
+        <td>Marathi</td>
+        <td>English</td>
+        <td>Marathi</td>
+        <td>English</td>
+        <td>Marathi</td>
+    </tr>
+
+    <tr>
+        <td>10:00</td>
+        <td>English</td>
+        <td>Marathi</td>
+        <td>English</td>
+        <td>Marathi</td>
+        <td>English</td>
+        <td>Marathi</td>
+    </tr>
+
+    <!-- Lunch -->
+    <tr>
+        <td colspan="7" class="lunch">Lunch</td>
+    </tr>
+
+    <tr>
+        <td>11:00</td>
+        <td>English</td>
+        <td>Marathi</td>
+        <td>English</td>
+        <td>Marathi</td>
+        <td>English</td>
+        <td>Marathi</td>
+    </tr>
+
+    <tr>
+        <td>12:00</td>
+        <td>English</td>
+        <td>Marathi</td>
+        <td>English</td>
+        <td>Marathi</td>
+        <td>English</td>
+        <td>Marathi</td>
+    </tr>
+
+</table>
+
+</body>
+</html>

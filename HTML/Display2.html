@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        nav {
+            overflow: auto;
+        }
+        nav img{
+            width: 100%;
+            height: 150px;
+
+        }
+        section {
+            height: auto;
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+            align-items: center;
+            background-color: bisque;
+ 
+        }
+        header {
+            background-color: rgb(72, 203, 247);
+            grid-row: 1;
+            grid-column: 1/4;
+            /* text-align: center; */
+            padding: 10px;
+            /* height: 40px; */
+            text-align: center ;
+ 
+        }
+        .left h1{
+            padding: 10px;
+        }
+        footer {
+            background-color: rgb(72, 203, 247);
+            grid-row: 1;
+            grid-column: 1/4;
+            text-align: right;
+            padding: 10px;
+            height: 40px;
+        }
+        h2{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            font-weight: bolder;
+            /* text-align: center; */
+        }
+
+        .box{
+            /* border: 1px solid red; */
+            height: 150px;
+            width: 150px;
+            text-align: center;
+            align-items: center;
+        }
+        /* img{
+            height: 40px;
+            width: 50px;
+            
+        } */
+        ul{
+            margin: 0;
+            /* padding: 30px; */
+            /* border: 1px solid red; */
+            /* height: 565px; */
+            /* width: 250px; */
+            background-color: rgb(201, 54, 54);
+            list-style: none;
+
+        }
+        ul li{
+            padding: 10px;
+            font-size: larger;
+            color: white;
+            list-style: none;
+        }
+        .main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+        }
+
+        .main-text {
+            width: 50%;
+        }
+
+        .main-img img{
+         /* flex: 1; */
+         /* display: flex; */
+         /* justify-content: center; */
+         /* border: 1px solid red; */
+         /* height: 400px; */
+         overflow: hidden;
+         transition: 2s;
+        }
+        
+        .main-img img:hover{
+            transform: scale(1.5,1.5);
+            transition: 2s;
+            margin-right:20px ;
+        }
+        button {
+            background-color: brown;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            margin-right: 10px;
+        }
+        
+        
+    
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <header>
+            <div class="left">
+                <h1>CRUST & CRUMBS</h1>
+                
+            </div>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li>
+                    <a href="#"> <img src="assets/cupcake1.jpg" alt=""></a>
+                    </li>
+                    <li>
+                    <a href="#"> <img src="assets/cupcake2.jpg" alt=""></a>
+                    </li>
+                    <li>
+                    <a href="#"> <img src="assets/cupcake3.jpg" alt=""></a>
+                    </li>
+                    <li>
+                    <a href="#"> <img src="assets/cupcake1.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </nav>
+            <main class="main">
+                <div class="main-text">
+                    <h2>Bring you happiness<br> through a piece of cake</h2>
+                    <p>Reach out to us to place an order or ask <br>about our many menu options.We'd love to help<br> you create a memorable dessert<br> experience.</p>
+                    <button>Order now</button>
+                    <button>See menu</button>
+                </div>
+                <div class="main-img">
+                    <img src="assets/newcake-removebg-preview.png" alt="">
+                </div>
+            </main>
+        </section>
+        <footer>
+             &copy; copyright @2026
+        </footer>
+ 
+    </div>
+</body>
+</html>

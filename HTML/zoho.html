@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Course Evaluation</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: white;
+}
+
+
+.container {
+    background: #98baf9;
+    padding: 40px;
+}
+
+
+.form {
+    width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+h2, p {
+    text-align: center;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+button {
+    margin: 20px;
+    background: #5a8dee;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+}
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <h2>Course Evaluation</h2>
+            <p>Thanks for taking this course! Tell us how you liked it!</p>
+            <form>
+                <label>Name</label>
+                <div class="box">
+                    <input type="text" placeholder="First" required>
+                    <input type="text" placeholder="Last" required>
+                </div><br>
+                
+                <label>Course attended</label>
+                <input type="text">
+                <br><br>
+                
+                <label>Name of the instructor</label>
+                <div class="box">
+                    <input type="text" placeholder="First">
+                    <input type="text" placeholder="Last">
+                </div>
+                <br><br>
+
+                <label>Instruction methods</label>
+                <div class="rating">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                </div><br>
+                
+                <label>Instructor's attitude </label>
+                <div class="rating">
+                    <i class="bi bi-shield"></i>
+                    <i class="bi bi-shield"></i>
+                    <i class="bi bi-shield"></i>
+                    <i class="bi bi-shield"></i>
+                    <i class="bi bi-shield"></i>
+                </div><br>
+                
+                <label>Usefulness of the course </label>
+                <div class="rating">
+                    <i class="bi bi-lightbulb"></i>
+                    <i class="bi bi-lightbulb"></i>
+                    <i class="bi bi-lightbulb"></i>
+                    <i class="bi bi-lightbulb"></i>
+                    <i class="bi bi-lightbulb"></i>
+                </div>
+                <br><br>
+                
+                <label>Anything else you'd like to say?</label>
+                <textarea rows="4"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

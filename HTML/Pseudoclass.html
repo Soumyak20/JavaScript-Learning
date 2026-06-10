@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:first-child{     
+            color: blue;
+            font-size: 20px;
+        }
+        li:last-child{
+            color: brown;
+            font-size: 20px;
+        }
+        /* it gives only 2nd child */
+        li:nth-child(2){      
+            color: aqua;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        /* it gives 3's of occurance */
+        li:nth-child(3n){
+            color: chartreuse;
+        }
+        /* it give 3's of occurance but from first */
+        li:nth-child(3n+1){
+            background-color: antiquewhite;
+        }
+        /* it gives last 4th number */
+        li:nth-last-of-type(4){
+            color: red;
+        }
+        /* for even */
+        li:nth-child(even){
+            border: 1px solid black;
+        }
+        /* for odd */
+        li:nth-child(odd)
+        {
+            background-color: cadetblue;
+        }
+        /* pseudo element class */
+        li::after {
+            content: "+";
+        }
+        li::before {
+           content: "@";
+        }
+        p::first-letter{
+            color: red;
+            font-weight: bolder;
+            font-size: 50px;
+        }
+        p::first-line{
+            color: blue;
+        }
+            p::selection {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+        <li>six</li>
+        <li>seven</li>
+        <li>eight</li>
+        <li>nine</li>
+        <li>ten</li>
+    </ol>
+    
+</body>
+</html>
