@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+
+    <style>
+        body{
+            padding: 0px;
+            margin: 10px;
+            background-color: white;
+        }
+
+        form{
+            background-color: antiquewhite;
+            border: 1px solid black;
+            width: 400px;
+        }
+
+        h2{
+            background-color: blueviolet;
+            text-align: center;
+            padding: 10px;
+            margin-top: 0px;
+        }
+
+        .content{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<form method="post">
+
+    <h2>Login Form</h2>
+
+    <div class="content">
+
+        <label>Email / Username:</label><br>
+        <input type="text" name="username" required><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br><br>
+
+        <input type="checkbox" name="remember">
+        <label>Remember Me</label><br><br>
+
+        <button type="submit">Login</button><br><br>
+
+        <a href="#">Forgot Password?</a><br><br>
+
+        <label>Don't have an account?</label>
+        <a href="#">Sign Up</a>
+
+    </div>
+
+</form>
+
+</body>
+</html>
